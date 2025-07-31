@@ -1,18 +1,17 @@
-# RubyMC Code-Style Guideline
+# RubyMC Code-Style-Richtlinie
 
-In order to have a code style that is as uniform and mature as possible for the network,
-here are some rules about what you should and shouldn't do!
+Um einen möglichst einheitlichen und ausgereiften Code-Stil im Netzwerk sicherzustellen, findest du hier einige Regeln, was du **tun** und was du **vermeiden** solltest.
 
-## » Formatting
+---
 
-Avoid putting your brackets in multiple lines (2 spaces)
+## » Formatierung
 
-### Usage of [1TBS](https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS):
-You not only reduce the length of your code (more readability, less lines), 
-but also avoid possible mistakes when indenting
+### Einrückung & Klammern (1TBS-Stil)
+
+Vermeide Klammern in eigenen Zeilen. Nutze stattdessen den [1TBS-Stil](https://de.wikipedia.org/wiki/Einr%C3%BCckstil#1TBS), um Zeilen zu sparen und Fehler bei Einrückungen zu vermeiden.
 
 ```java
-// BAD
+// SCHLECHT
 void mobbing(Niklas niklas) 
 { 
   for (Member member : members) {
@@ -20,7 +19,7 @@ void mobbing(Niklas niklas)
   }
 }
 
-// GOOD
+// GUT
 void mobbing(Niklas niklas) {
   for (Member member : members) {
     member.mob(niklas);
